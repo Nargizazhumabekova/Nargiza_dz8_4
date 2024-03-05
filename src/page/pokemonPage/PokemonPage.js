@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import PokemonCard from '../../components/PokemonCard/PokemonCard';
+import PokemonCard from '../../components/pokemonCard/PokemonCard';
 import classes from './PokemonPage.module.css';
 import Pagination from '../../components/pagination/Pagination';
 
@@ -61,7 +61,7 @@ const PokemonPage = () => {
                         <ul className={classes.list}>
                             {pokemonList.map(pokemon => <PokemonCard key={pokemon.name} pokemon={pokemon}/>)}
                         </ul>
-                        <Pagination handleNext={handleNext} page={page} handlePrev={handlePrev}/>
+                       // <Pagination handleNext={handleNext} page={page} handlePrev={handlePrev}/>
 
                     </>
 
